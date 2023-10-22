@@ -3,7 +3,6 @@ onLoaded.push(() => document.querySelector(".home-background").style.display = "
 window.addEventListener("load", async () => {
     new Page(document.title, document.body.innerHTML).build()
 
-
-    //const news = await News.generate()
-    //news.createIndexElements(document.querySelector(".news"))
+    const news = await News.generate()
+    news.createIndexElements(document.querySelector(".news"))
 })

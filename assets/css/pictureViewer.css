@@ -1,3 +1,17 @@
+.picture-viewer {
+    width: 100%;
+
+    border-color: #2d705c;
+    border-width: 1px;
+    border-style: ridge;
+
+    background-color: #b7d5e1;
+}
+
+.picture-container {
+    height: 500px;
+}
+
 .next {
     color: #5b9820;
 }
