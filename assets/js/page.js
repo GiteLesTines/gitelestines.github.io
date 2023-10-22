@@ -44,6 +44,8 @@ const footer = [
     }
 ]
 
+const onLoaded = []
+
 class Page {
     title = "..."
     body = "..."
@@ -129,6 +131,10 @@ class Page {
         containerElement.appendChild(footerElement)
 
         document.body.appendChild(containerElement)
+
+        for (const func of onLoaded) {
+            func()
+        }
     }
 
 }
