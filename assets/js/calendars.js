@@ -147,7 +147,9 @@ class FakeDay {
 
 window.addEventListener('load', async () => {
     try {
-        new Calendars(await Reservations.generate()).createElement(document.querySelector(".page-content"))
+        const calendarsElement = document.querySelector(".calendars")
+        calendarsElement.innerHTML = ""
+        new Calendars(await Reservations.generate()).createElement(calendarsElement)
     } catch (exception) {
         console.error(exception)
         const calendarsElement = document.querySelector(".calendars")

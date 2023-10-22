@@ -1,7 +1,7 @@
 class Data {
 
     static async getResponse(path) {
-        return await fetch("https://raw.githubusercontent.com/GiteSabotDeVenus/data/main/" + path, {headers: new Headers()})
+        return await fetch("https://raw.githubusercontent.com/GiteLesTines/data/main/" + path, {headers: new Headers()})
     }
 
     static async getJSON(path) {
