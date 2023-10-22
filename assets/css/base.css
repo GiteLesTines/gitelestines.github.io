@@ -33,6 +33,14 @@ body {
     background-color: #ccd6e3;
 }
 
+.body-container {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 header {
     position: sticky;
     top: 0;

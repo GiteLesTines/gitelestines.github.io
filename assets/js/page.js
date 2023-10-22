@@ -93,6 +93,12 @@ class Page {
         headerElement.appendChild(menuElement)
         //headerElement.appendChild(menuActivatorElement)
 
+        const containerElement = document.createElement("div")
+        containerElement.classList.add("body-container")
+
+        const headerAndPageContainerElement = document.createElement("div")
+        headerAndPageContainerElement.classList.add("page-and-header-container")
+
         const pageContainerElement = document.createElement("div")
         pageContainerElement.classList.add("page-container")
         pageContainerElement.innerHTML = this.body;
@@ -116,9 +122,13 @@ class Page {
             footerElement.appendChild(footerItemElement)
         }
 
-        document.body.appendChild(headerElement)
-        document.body.appendChild(pageContainerElement)
-        document.body.appendChild(footerElement)
+        headerAndPageContainerElement.appendChild(headerElement)
+        headerAndPageContainerElement.appendChild(pageContainerElement)
+
+        containerElement.appendChild(headerAndPageContainerElement)
+        containerElement.appendChild(footerElement)
+
+        document.body.appendChild(containerElement)
     }
 
 }
