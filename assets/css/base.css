@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Mukta', cursive;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Playpen Sans', cursive;
+    font-size: 30px;
+}
+
+.top-border, .bottom-border {
+    border-color: #2d705c;
+    border-width: 0;
+    border-style: ridge;
+}
+
+.top-border {
+    border-top-width: 1px;
+}
+
+.bottom-border {
+    border-bottom-width: 1px;
+}
+
+body {
+    background-color: #ccd6e3;
+}
+
+header {
+    position: sticky;
+    top: 0;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #ffffff;
+}
+
+.menu {
+    width: 60%;
+
+    padding-top: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item a {
+    color: #2d705c;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    background-color: #9d8546;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-item, .footer-item div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 70%;
+}
