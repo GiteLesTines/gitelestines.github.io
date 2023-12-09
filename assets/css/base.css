@@ -40,7 +40,7 @@ h3 {
 }
 
 body {
-    background-color: #ccd6e3;
+    background-color: #94c3f3;
 }
 
 .body-container {
@@ -86,11 +86,13 @@ header {
 
 footer {
     width: 100%;
+}
 
+.footer-items {
     padding-top: 5px;
     padding-bottom: 5px;
 
-    background-color: #9d8546;
+    background-color: black;
 
     display: flex;
     justify-content: space-around;
@@ -107,4 +109,20 @@ section {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 70%;
+}
+
+.clouds {
+    position: fixed;
+    display: flex;
+    top: 50px;
+
+    background-image: url(../img/cloud.svg);
+    height: 35px;
+
+    width: 100vw;
+}
+
+.mountains {
+    height: 100px;
+    background-image: url(../img/mountain.svg);
 }

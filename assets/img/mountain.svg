@@ -1,0 +1,41 @@
+<svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol id="spruce" viewBox="0 0 50 70">
+            <polygon points="25 0, 10 25, 40 25" fill="black"></polygon>
+            <polygon points="25 15, 5 40, 45 40" fill="black"></polygon>
+            <polygon points="25 30, 0 55, 50 55" fill="black"></polygon>
+            <rect x="20" y="50" width="10" height="20" fill="black"></rect>
+        </symbol>
+        <symbol id="mountain" viewBox="20 0 260 50">
+            <polygon points="0 50, 100 0, 150 50" fill="black"></polygon>
+            <polygon points="100 50, 200 20, 250 50" fill="black"></polygon>
+            <polygon points="220 50, 250 10, 290 50" fill="black"></polygon>
+        </symbol>
+        <symbol id="spruce-mountain" viewBox="0 -33 290 40">
+            <use href="#spruce" width="15" x="0" y="-2"></use>
+            <use href="#spruce" width="15" x="10" y="-4"></use>
+            <use href="#spruce" width="15" x="15" y="-10"></use>
+            <use href="#spruce" width="15" x="30" y="-15"></use>
+            <use href="#spruce" width="15" x="40" y="-23"></use>
+            <use href="#spruce" width="15" x="48" y="-14"></use>
+            <use href="#spruce" width="15" x="55" y="-10"></use>
+            <use href="#spruce" width="15" x="70" y="0"></use>
+            <use href="#spruce" width="15" x="80" y="-5"></use>
+            <use href="#spruce" width="15" x="100" y="-9"></use>
+            <use href="#spruce" width="15" x="120" y="-2"></use>
+            <use href="#spruce" width="15" x="125" y="-5"></use>
+            <use href="#spruce" width="15" x="143" y="-9"></use>
+            <use href="#spruce" width="15" x="155" y="-15"></use>
+            <use href="#spruce" width="15" x="162" y="-14"></use>
+            <use href="#spruce" width="15" x="190" y="-3"></use>
+            <use href="#spruce" width="15" x="200" y="0"></use>
+            <use href="#spruce" width="15" x="215" y="-5"></use>
+            <use href="#spruce" width="15" x="228" y="-8"></use>
+            <use href="#spruce" width="15" x="235" y="-3"></use>
+            <use href="#spruce" width="15" x="255" y="-4"></use>
+            <use href="#mountain" width="160"></use>
+            <use href="#mountain" width="160" x="130"></use>
+        </symbol>
+    </defs>
+    <use href="#spruce-mountain"></use>
+</svg>

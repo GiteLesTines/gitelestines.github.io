@@ -61,7 +61,6 @@ class Page {
         document.title = this.title + " - " + globalTitle
 
         const headerElement = document.createElement("header")
-        headerElement.classList.add("bottom-border")
 
         const titleElement = document.createElement("h1")
         titleElement.innerText = globalTitle
@@ -82,6 +81,9 @@ class Page {
             menuElement.appendChild(menuItemElement)
         }
 
+        const cloudsElement = document.createElement("div")
+        cloudsElement.classList.add("clouds")
+
         //const menuActivatorElement = document.createElement("span")
         //menuActivatorElement.classList.add("menu-element")
         //menuActivatorElement.classList.add("menu-activator")
@@ -93,6 +95,7 @@ class Page {
 
         headerElement.appendChild(titleElement)
         headerElement.appendChild(menuElement)
+        headerElement.appendChild(cloudsElement)
         //headerElement.appendChild(menuActivatorElement)
 
         const containerElement = document.createElement("div")
@@ -106,7 +109,12 @@ class Page {
         pageContainerElement.innerHTML = this.body;
 
         const footerElement = document.createElement("footer")
-        footerElement.classList.add("top-border")
+
+        const mountainsElement = document.createElement("div")
+        mountainsElement.classList.add("mountains")
+
+        const footerItemsElement = document.createElement("div")
+        footerItemsElement.classList.add("footer-items")
 
         for (const footerItem of footer) {
             const footerItemElement = document.createElement("div")
@@ -121,8 +129,11 @@ class Page {
             footerItemElement.appendChild(footerItemTitleElement)
             footerItemElement.appendChild(footerItemContentElement)
 
-            footerElement.appendChild(footerItemElement)
+            footerItemsElement.appendChild(footerItemElement)
         }
+
+        footerElement.appendChild(mountainsElement)
+        footerElement.appendChild(footerItemsElement)
 
         headerAndPageContainerElement.appendChild(headerElement)
         headerAndPageContainerElement.appendChild(pageContainerElement)
