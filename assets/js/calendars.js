@@ -16,8 +16,6 @@ class Calendars {
                 verifiedYear += 1
             }
 
-            console.log(verifiedMonth)
-
             this.calendars.push(new Calendar(reservations, verifiedYear, verifiedMonth))
         }
     }
@@ -71,7 +69,7 @@ class Calendar {
         const calendarContentElement = document.createElement("table")
 
         const weekDayBarElement = document.createElement("tr")
-        for (const weekDayName in weekDayNames) {
+        for (const weekDayName of weekDayNames) {
             new FakeDay(weekDayName).createElement(weekDayBarElement)
         }
 
