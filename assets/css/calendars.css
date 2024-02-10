@@ -1,4 +1,4 @@
-.gray-explanation, .red-explanation, .green-explanation {
+.gray-explanation, .red-explanation, .green-explanation, .yellow-explanation {
     font-weight: bold;
 }
 
@@ -16,9 +16,18 @@
     background-color: #abdc75;
 }
 
+.yellow-explanation {
+    background-color: #fffb8b;
+}
+
 .day {
-    background-color: #abdc75;
     font-weight: bold;
+    background-color: #abdc75;
+}
+
+.day.high {
+    font-weight: bold;
+    background-color: #fffb8b;
 }
 
 .day.reserved {

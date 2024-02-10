@@ -31,7 +31,7 @@ const footer = [
     {
         "title": "Navigation",
         "content": `<p>Vous consultez la page "{TITLE}"</p>
-                    <p><a href="/">> Retour à l'accueil</a></p>`
+                    <p>> <a href="/">Retour à l'accueil</a></p>`
     },
     {
         "title": "Liens utiles",

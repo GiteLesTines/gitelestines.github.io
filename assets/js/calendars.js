@@ -40,7 +40,7 @@ class Calendar {
     constructor(reservations, year, month) {
         this.name = monthNames[month] + " " + year
 
-        const maxDay = new Date(year, month, 0).getDate()
+        const maxDay = new Date(year, month + 1, 0).getDate()
 
         for (let day = 1; day <= maxDay; day++) {
             this.days.push(new Day(reservations, year, month, day))
@@ -103,6 +103,7 @@ class Day {
     weekDay = 0
     reserved = false
     passed = false
+    high = false
 
     constructor(reservations, year, month, day) {
         const currentDate = new Date()
@@ -112,6 +113,7 @@ class Day {
         this.weekDay = dayDate.getDay() === 0 ? 7 : dayDate.getDay()
         this.reserved = reservations.getReservedDays(year, month).includes(day)
         this.passed = currentDate - dayDate >= 0
+        this.high = isDateHigh(dayDate)
     }
 
     createElement(node) {
@@ -119,6 +121,7 @@ class Day {
         dayElement.classList.add("day")
         if (this.reserved) dayElement.classList.add("reserved")
         if (this.passed) dayElement.classList.add("passed")
+        if (this.high) dayElement.classList.add("high")
         dayElement.appendChild(document.createTextNode(this.day.toString()))
 
         node.appendChild(dayElement)
@@ -140,6 +143,12 @@ class FakeDay {
         node.appendChild(fakeDayElement)
     }
 
+}
+
+
+function isDateHigh(date) {
+    const time = date.getTime()
+    return (1704063600000 <= time && time <= 1711234800000) || (1720044000000 <= time && time <= 1725573600000) || (1734735600000 <= time && time <= 1735599600000)
 }
 
 
