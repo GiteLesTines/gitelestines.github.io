@@ -76,6 +76,11 @@ header {
     color: #2d705c;
     font-size: 20px;
     text-decoration: none;
+    transition: color 0.5s;
+}
+
+.menu-item a:hover {
+    color: #56ab50;
 }
 
 .page-container {
@@ -102,6 +107,11 @@ footer {
 .footer-item {
     max-width: 30%;
     margin-top: 10px;
+}
+
+.footer-item a {
+    color: #2a99c7;
+    text-decoration: none;
 }
 
 .footer-item, .footer-item div {
