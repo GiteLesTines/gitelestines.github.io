@@ -15,7 +15,7 @@
 .home-background h1, .home-background h3 {
     color: white;
     font-family: 'Delius Unicase', cursive;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 #2d705c, 0 1px #2d705c, 1px 0 #2d705c, 0 -1px #2d705c;
 }
 
 .home-background h1 {
