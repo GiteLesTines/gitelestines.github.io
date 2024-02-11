@@ -25,6 +25,10 @@ h3 {
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .top-border, .bottom-border {
     border-color: #2d705c;
     border-width: 0;
