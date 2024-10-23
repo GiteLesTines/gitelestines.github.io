@@ -147,8 +147,7 @@ class FakeDay {
 
 
 function isDateHigh(date) {
-    const time = date.getTime()
-    return (1704063600000 <= time && time <= 1711234800000) || (1720044000000 <= time && time <= 1725573600000) || (1734735600000 <= time && time <= 1735599600000)
+    return (date.getFullYear() === 2024 && date.getMonth() === 11 && date.getDate() >= 15) || (date.getFullYear() === 2025 && (date.getMonth() === 0 || date.getMonth() === 1 || date.getMonth() === 2 || date.getMonth() === 6 || date.getMonth() === 7))
 }
 
 

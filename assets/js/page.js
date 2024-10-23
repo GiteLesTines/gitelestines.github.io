@@ -62,8 +62,19 @@ class Page {
 
         const headerElement = document.createElement("header")
 
+        const usefulHeaderPartElement = document.createElement("div")
+        usefulHeaderPartElement.classList.add("header")
+
         const titleElement = document.createElement("h1")
+        titleElement.classList.add("header-title")
         titleElement.innerText = globalTitle
+
+        const menuActivatorElement = document.createElement("h1")
+        menuActivatorElement.classList.add("menu-activator")
+        menuActivatorElement.appendChild(document.createTextNode("≡ Menu"))
+        menuActivatorElement.addEventListener('click', () => {
+            menuElement.classList.toggle('active')
+        })
 
         const menuElement = document.createElement("div")
         menuElement.classList.add("menu")
@@ -84,19 +95,12 @@ class Page {
         const cloudsElement = document.createElement("div")
         cloudsElement.classList.add("clouds")
 
-        //const menuActivatorElement = document.createElement("span")
-        //menuActivatorElement.classList.add("menu-element")
-        //menuActivatorElement.classList.add("menu-activator")
-        //menuActivatorElement.appendChild(document.createTextNode("MENU"))
+        usefulHeaderPartElement.appendChild(titleElement)
+        usefulHeaderPartElement.appendChild(menuActivatorElement)
+        usefulHeaderPartElement.appendChild(menuElement)
 
-        //menuActivatorElement.addEventListener('click', () => {
-        //    menuElement.classList.toggle('active')
-        //})
-
-        headerElement.appendChild(titleElement)
-        headerElement.appendChild(menuElement)
+        headerElement.appendChild(usefulHeaderPartElement)
         headerElement.appendChild(cloudsElement)
-        //headerElement.appendChild(menuActivatorElement)
 
         const containerElement = document.createElement("div")
         containerElement.classList.add("body-container")
