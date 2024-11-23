@@ -9,23 +9,48 @@
 }
 
 .picture-container {
-    height: 500px;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.next {
-    color: #5b9820;
+.picture {
+    max-width: 95%;
+    max-height: 95%;
+    display: none;
 }
 
-.previous {
-    color: #ef1919;
+.current {
+    display: block;
 }
 
-.next, .previous {
+.next-picture {
+    color: #b7d5e1;
+    background-color: #2d705c;
+    width: 100%;
+}
+
+.previous-picture {
+    color: #b7d5e1;
+    background-color: #2d705c;
+    width: 100%;
+}
+
+.next-picture, .previous-picture {
     cursor: pointer;
     transition: 0.5s;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 
-.next:hover, .previous:hover {
-    color: #8421cb;
+.next-picture:hover, .previous-picture:hover {
+    color: #2d705c;
+    background-color: #b7d5e1;
+}
+
+.picture-viewer-utils {
+    display: flex;
+    justify-content: space-evenly;
 }
