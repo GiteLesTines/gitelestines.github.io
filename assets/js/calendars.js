@@ -147,7 +147,7 @@ class FakeDay {
 
 
 function isDateHigh(date) {
-    return (date.getFullYear() === 2024 && date.getMonth() === 11 && date.getDate() >= 15) || (date.getFullYear() === 2025 && (date.getMonth() === 0 || date.getMonth() === 1 || date.getMonth() === 2 || date.getMonth() === 6 || date.getMonth() === 7))
+    return (date.getFullYear() === 2025 && ((date.getMonth() === 9 && date.getDate() >= 10) || (date.getMonth() === 10 && date.getDate() <= 2) || (date.getMonth() === 11 && date.getDate() >= 20)) || (date.getFullYear() === 2025 && (date.getMonth() === 0 || date.getMonth() === 1 || date.getMonth() === 2 || date.getMonth() === 6 || date.getMonth() === 7))
 }
 
 
